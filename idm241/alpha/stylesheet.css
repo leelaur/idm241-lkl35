@@ -23,6 +23,15 @@
     font-display: swap;
 }
 
+h1 {
+    color: #dd0031;
+}
+h6 {
+    font-size: 12pt;
+}
+h3 {
+    color: #dd0031;
+}
 
 .wrapper {
     margin-right: auto; 
