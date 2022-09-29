@@ -52,3 +52,10 @@ header {
 .link:hover {
     color: #dd0031;
 }
+
+/*responsive*/
+@media (max-width: 1075px) {
+    .section__description {
+        flex-direction: column;
+    } 
+  }
