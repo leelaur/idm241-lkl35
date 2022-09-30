@@ -27,10 +27,13 @@ h1 {
     color: #dd0031;
 }
 h6 {
-    font-size: 12pt;
+    font-size: 14pt;
 }
 h3 {
     color: #dd0031;
+    /* text-decoration: underline; */
+    font-size: 16pt;
+    font-family: 'Apercu-Bold';
 }
 
 .wrapper {
@@ -45,13 +48,33 @@ header {
 }
 
 .section {
-    margin: 5rem 0; 
+    margin: 3rem 0; 
 }
 .section__description, .section__images {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    margin-top: 1rem;
 }
 
+.description-category {
+    max-width: 300px;
+}
+
+.sub-text {
+    font-family: 'Apercu-Bold';
+    text-align: center;
+    position: relative;
+    top: 20px;
+
+}
+li {
+    margin-left:3rem;
+    line-height: 1.5;
+}
+
+.sub-title--top {
+    margin-top: 1rem;;
+}
 /* URL to Chick-fil-A site */
 .link {
     text-decoration: none;
@@ -61,15 +84,41 @@ header {
 .link:hover {
     color: #dd0031;
 }
-img {
-    max-width: 300px;
-}
-img:hover {
 
+img {
+    max-width: 350px;
 }
+
+.logo {
+    max-width: 70px;
+    margin-bottom: 1rem;
+}
+
 /*responsive*/
 @media (max-width: 1075px) {
     .section__description, .section__images {
         flex-direction: column;
+        margin: 0 auto;
+      max-width: 350px;
+        }
+
+    .section {
+        margin-left: auto;
+        margin-right: auto;
+      max-width: 400px;
+        
     } 
+    .description-category {
+        margin-top: 2rem;
+    }
+
+    img, .sub-text {
+        margin: auto;
+    }
+
+
+    .sub-text--top  {
+        margin-top: 2rem;
+    }
+
   }
