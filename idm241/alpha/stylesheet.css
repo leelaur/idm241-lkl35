@@ -124,8 +124,8 @@ img {
   }
 
   /*for mobile*/
-  @media (max-width: 400px) {
+  @media (max-width: 430px) {
     .wrapper {
-        margin: 5%;
+        margin: 7%;
     }
   }
