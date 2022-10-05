@@ -38,7 +38,7 @@ h3 {
 .wrapper {
     margin-right: auto; 
     margin-left:  auto;
-    max-width: 960px; 
+    max-width: 1000px; 
     margin-top: 50px;
 }
 
@@ -98,7 +98,7 @@ img {
 /*responsive*/
 @media (max-width: 1075px) {
     .section__description, .section__images {
-        flex-direction: column;
+        flex-direction: column ;
         margin: 0 auto;
       max-width: 350px;
         }
@@ -121,6 +121,7 @@ img {
     .sub-text--top  {
         margin-top: 2rem;
     }
+
   }
 
   /*for mobile*/
