@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Apercu', 'Arial';
+}
+
+/*Fonts*/
+@font-face {
+    font-family: 'Apercu';
+    src: url('fonts/Apercu-Regular.woff2') format('woff2'),
+        url('fonts/Apercu-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url('fonts/Apercu-Bold.woff2') format('woff2'),
+        url('fonts/Apercu-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1 {
+    color: #dd0031;
+}
+h6 {
+    font-size: 14pt;
+}
+h3 {
+    color: #dd0031;
+    font-size: 16pt;
+    font-family: 'Apercu-Bold', 'Arial';
+}
+
+.wrapper {
+    margin-right: auto; 
+    margin-left:  auto;
+    max-width: 1000px; 
+    margin-top: 50px;
+}
+
+header {
+    text-align: center;
+}
+
+.section {
+    margin: 3rem 0; 
+}
+.section__description {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+.description-category {
+    max-width: 300px;
+}
+
+
+li {
+    margin-left:3rem;
+    line-height: 1.5;
+}
+
+.sub-title--top {
+    margin-top: 1rem;;
+}
+
+
+.logo {
+    max-width: 70px;
+    margin-bottom: 1rem;
+}
+
+/* URL to Chick-fil-A site */
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover {
+    color: #dd0031;
+}
+
+
+/*responsive*/
+@media (max-width: 1075px) {
+    .section__description, .section__images {
+        flex-direction: column ;
+        margin: 0 auto;
+      max-width: 350px;
+        }
+
+    .section {
+        margin-left: auto;
+        margin-right: auto;
+      max-width: 400px;
+        
+    } 
+    .description-category {
+        margin-top: 2rem;
+    }
+
+    img, .sub-text {
+        margin: auto;
+    }
+
+
+    .sub-text--top  {
+        margin-top: 2rem;
+    }
+
+  }
+
+  /* BUTTON BUILD */
+  .btn-container {
+    margin-top: 2rem;
+
+  }
+  button {
+
+    width: 300px;
+    height: 64px;
+/* space around the button*/
+    /* margin: 2rem; */
+
+  background: linear-gradient(-180deg,rgba(254,67,108,.99),rgba(221,0,49,.99) 49%,#c20726);
+  border-radius: 12px;
+  color: white;
+border-style: none;
+
+margin: auto;
+
+  }
+
+  .btn-containter--between {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-text {
+    margin: 10px 50px 10px 0;
+    font-size: 14px;
+    /* margin-right: 50px; */
+    
+    /* font-family: 'Apercu-Bold'; */
+  }
+
+  .van-icon {
+    height: 64px;
+    margin: 0;
+  }
+
+  /*for mobile*/
+  @media (max-width: 430px) {
+    .wrapper {
+        margin: 7%;
+    }
+  }
