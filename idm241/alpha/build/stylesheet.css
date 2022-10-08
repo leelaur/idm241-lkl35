@@ -7,8 +7,8 @@
 /*Fonts*/
 @font-face {
     font-family: 'Apercu';
-    src: url('fonts/Apercu-Regular.woff2') format('woff2'),
-        url('fonts/Apercu-Regular.woff') format('woff');
+    src: url('../fonts/Apercu-Regular.woff2') format('woff2'),
+        url('../fonts/Apercu-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -16,8 +16,8 @@
 
 @font-face {
     font-family: 'Apercu';
-    src: url('fonts/Apercu-Bold.woff2') format('woff2'),
-        url('fonts/Apercu-Bold.woff') format('woff');
+    src: url('../fonts/Apercu-Bold.woff2') format('woff2'),
+        url('../fonts/Apercu-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -27,11 +27,11 @@ h1 {
     color: #dd0031;
 }
 h6 {
-    font-size: 14pt;
+    font-size: 16pt;
 }
 h3 {
     color: #dd0031;
-    font-size: 16pt;
+    font-size: 18pt;
     font-family: 'Apercu-Bold', 'Arial';
 }
 
@@ -118,8 +118,11 @@ li {
   /* BUTTON BUILD */
   .btn-container {
     margin-top: 2rem;
-
+    display: flex;
+    justify-content: center;
+    
   }
+
   button {
 
     width: 300px;
@@ -134,6 +137,14 @@ border-style: none;
 
 margin: auto;
 
+transition: all 0.3s ease-out;
+
+  }
+
+  button:hover {
+    cursor: pointer;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.3);
+    transition: box-shadow 0.2s ease-in-out;
   }
 
   .btn-containter--between {
@@ -143,10 +154,10 @@ margin: auto;
   }
 
   .btn-text {
-    margin: 10px 50px 10px 0;
+    margin-left:15px;
     font-size: 14px;
-    /* margin-right: 50px; */
-    
+    text-align: right;
+    display: fixed;
     /* font-family: 'Apercu-Bold'; */
   }
 
@@ -154,6 +165,7 @@ margin: auto;
     height: 64px;
     margin: 0;
   }
+
 
   /*for mobile*/
   @media (max-width: 430px) {
