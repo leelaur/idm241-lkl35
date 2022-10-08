@@ -25,20 +25,28 @@
 
 h1 {
     color: #dd0031;
+    font-size: 32pt;
 }
 h6 {
-    font-size: 16pt;
+    font-size: 18pt;
 }
 h3 {
     color: #dd0031;
-    font-size: 18pt;
+    font-size: 20pt;
     font-family: 'Apercu-Bold', 'Arial';
+}
+
+p {
+    font-size: 16pt;
+}
+li {
+    font-size: 14pt;
 }
 
 .wrapper {
     margin-right: auto; 
     margin-left:  auto;
-    max-width: 1000px; 
+    max-width: 80%; 
     margin-top: 50px;
 }
 
@@ -113,6 +121,10 @@ li {
         margin-top: 2rem;
     }
 
+    footer {
+        margin-bottom: 50px;
+    }
+
   }
 
   /* BUTTON BUILD */
@@ -125,7 +137,7 @@ li {
 
   button {
 
-    width: 300px;
+  width: 300px;
     height: 64px;
 /* space around the button*/
     /* margin: 2rem; */
@@ -172,4 +184,12 @@ transition: all 0.3s ease-out;
     .wrapper {
         margin: 7%;
     }
+  }
+.wrapper {
+    min-height: 85vh;
+}
+  footer {
+    display: flex;
+    justify-content: center;
+
   }
