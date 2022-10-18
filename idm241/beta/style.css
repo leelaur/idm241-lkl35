@@ -24,11 +24,8 @@
     z-index: 1000;
 }
 
-.pin-button {
-visibility: hidden;
-}
 
-label {
+.button {
     display: none;
     background-color: #E60023;
     text-align: center;
@@ -42,36 +39,37 @@ label {
     right: 10px;
 }
 
-label:hover {
+.button:hover {
  background-color: #9E2224;
 
 }
 
-label:hover > .pin {
+.button:hover > .pin {
     transform: translateX(5px) translateY(-5px);
     transition: transform 0.2s;
 }
 
-label:not(:hover) > .pin  {
+.button:not(:hover) > .pin  {
     transform: translateX(0) translateY(0);
     transition: transform 0.2s;
 }
 
 /* won't do animation after click */
-.pin-button:after ~ .pin  {
-    transform: scale;
+/* button:checked  .pin  {
+    transform: translateX(10px) translateY(5px);
     transition: transform 0.1s;
-}
+} */
 
-.pin-button:checked ~ label{
+
+
+.button:checked ~ label{
     background-color: black;
 }
 
 
 /*hover display */
-.image:hover ~ label, label:hover {
+.image:hover + .button, .button:hover {
     display: inline-block;
-
     cursor: pointer;
 }
 
