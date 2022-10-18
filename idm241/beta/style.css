@@ -1,0 +1,87 @@
+* {
+    /* margin: 0;
+    padding: 0; */
+}
+
+.image {
+    width: 250px;
+    border-radius: 25px;
+}
+
+.image:hover {
+    /* change to dark on hover */
+    /* filter: brightness(50%); */
+
+    /* cursor changes to pointer on hover */
+    cursor: zoom-in;
+}
+
+/* pin save button */
+.pin {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    z-index: 1000;
+}
+
+.pin-button {
+visibility: hidden;
+}
+
+label {
+    display: none;
+    background-color: #E60023;
+    text-align: center;
+    width: 80px;
+    height: 50px;
+    border-radius: 30px;
+    border-style: none;
+    
+    position: absolute;
+    top: 12px;
+    right: 10px;
+}
+
+label:hover {
+ background-color: #9E2224;
+
+}
+
+label:hover > .pin {
+    transform: translateX(5px) translateY(-5px);
+    transition: transform 0.2s;
+}
+
+label:not(:hover) > .pin  {
+    transform: translateX(0) translateY(0);
+    transition: transform 0.2s;
+}
+
+/* won't do animation after click */
+.pin-button:after ~ .pin  {
+    transform: scale;
+    transition: transform 0.1s;
+}
+
+.pin-button:checked ~ label{
+    background-color: black;
+}
+
+
+/*hover display */
+.image:hover ~ label, label:hover {
+    display: inline-block;
+
+    cursor: pointer;
+}
+
+.entire {
+    position: relative;
+    width: 250px;
+    z-index: 10;
+
+}
+
+.entire:hover > .image{
+    filter: brightness(50%);
+}
