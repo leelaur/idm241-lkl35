@@ -61,12 +61,6 @@
 } */
 
 
-
-.button:checked ~ label{
-    background-color: black;
-}
-
-
 /*hover display */
 .image:hover + .button, .button:hover {
     display: inline-block;
