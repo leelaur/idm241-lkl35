@@ -4,21 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IDM 241 - Beta</title>
-
-    <link rel="stylesheet" href="style.css">
+    <title>IDM 241 - Microinteractions - Lauren Lee</title>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <div class="entire">
-        <img src="images/image.jpg" alt="2 people carry a boat in a field" class="image"/>
-        <button class="button">
-            <img src="images/pin.png" alt="pin icon" class="pin" id="pinBtn"/>
-        </button>  
-
+    <div class="wrapper">
+        <header>
+            <img src="images/icon.png" alt="Pinterest logo" class="logo"/>
+            <h1> IDM 241: Microinteractions - Beta</h1>
+            <p class="sub-title--top"> Pinterest saving pin - <a href="https://www.pinterest.com" class="link" target="_blank">https://www.pinterest.com</a></p>
+        </header>
+        <section class="section">
+            <h3>Beta Improvement Descriptions</h3>
+            <div class="section__description">
+                <div class="description-category">
+                    <h6> Triggers</h6>
+                    <ul>
+                        <li>Hover on pin button</li>
+                        <li> Hover off pin button</li>
+                        <li> Click pin button</li>
+                        <li> Mouseout pin button after click</li>
+                    </ul>
+                </div>
+                <div class="description-category">
+                    <h6> Rules</h6>
+                    <p> <i>Hover on button</i></p>
+                    <ul>
+                        <li>Cursor changes to pointer</li>
+                        <li>Pin icon moves up 5px and right 5px in 0.3s</li>
+                        <li>Color changes to #</li>
+                    </ul>
+                    <p> <i>Hover off button</i></p>
+                    <ul>
+                        <li>Pointer changes to cursor off hover</li>
+                        <li>Pin icon moves to original position in 0.3s</li>
+                        <li>Color changes to original shade</li>
+                    </ul>
+                    <p> <i>Click button</i></p>
+                    <ul>
+                        <li>Pin icon moves to original position in 0.1s</li>
+                        <li>Opacity 100 for action lines image</li>
+                    </ul>
+                    <p> <i>Mouseout after click</i></p>
+                    <ul>
+                        <li>Opacity 0 for action lines image</li>
+                    </ul>
+                </div>
+                <div class="description-category">
+                    <h6> Feedback</h6>
+                    <p> <i>Hover on button</i></p>
+                    <ul>
+                        <li>Cursor changes to pointer</li>
+                        <li>Van icon moves left on x-axis by 50px</li>
+                        <li>Fade in to y-offset shadow 20px</li>
+                    </ul>
+                    <p> <i>Hover off button</i></p>
+                    <ul>
+                        <li>Pointer changes to cursor off hover</li>
+                        <li>Van icon moves right on x-axis to the original position</li>
+                        <li>Fade out of y-offset shadow 20px to no shadow</li>
+                    </ul>
+                </div>
+                <div class="description-category">
+                    <h6> Loops & Modes</h6>
+                    <ul>
+                        <li>N/A</li>
+                    </ul>
+                </div>
+            </div>
+          
+        </section>
+        <section class="section">
+            <h3>Alpha Static Images</h3>
+            <div class="section__images">
+                <div>
+                    <p class="sub-text sub-text--top">BEFORE</p>
+                    <img src="images/image_before.png" alt="Order delivery button no hover" title="static image"/>
+                </div>
+                <div>
+                    <p class="sub-text">AFTER</p>
+                    <img src="images/image_after.png" alt="Order delivery button on hover" title="static image"/>
+                </div>
+            </div>
+        </section>
     </div>
+    
 </body>
-<script src="script.js">
-  
-
-</script>
 </html>

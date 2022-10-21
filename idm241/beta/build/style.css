@@ -43,10 +43,14 @@
  background-color: #9E2224;
 
 }
+/* TRIAL */
+.button-change {
+    background-color:blue;
+}
 
 .button:hover > .pin {
     transform: translateX(5px) translateY(-5px);
-    transition: transform 0.2s;
+    transition: transform 0.3s;
 }
 
 .button:not(:hover) > .pin  {
@@ -55,10 +59,10 @@
 }
 
 /* won't do animation after click */
-/* button:checked  .pin  {
-    transform: translateX(10px) translateY(5px);
+.pin-animation  {
+    transform: translateX(0) translateY(0);
     transition: transform 0.1s;
-} */
+}
 
 
 /*hover display */
