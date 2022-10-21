@@ -15,67 +15,121 @@
             <p class="sub-title--top"> Pinterest saving pin - <a href="https://www.pinterest.com" class="link" target="_blank">https://www.pinterest.com</a></p>
         </header>
         <section class="section">
-            <h3>Beta Improvement Descriptions</h3>
+            <h3>Beta Descriptions</h3>
             <div class="section__description">
                 <div class="description-category">
                     <h6> Triggers</h6>
                     <ul>
-                        <li>Hover on pin button</li>
-                        <li> Hover off pin button</li>
-                        <li> Click pin button</li>
-                        <li> Mouseout pin button after click</li>
+                        <li>Hover on save button</li>
+                        <li> Hover off save button</li>
+                        <li> Click on save button</li>
+                        <li> Click off save button</li>
                     </ul>
                 </div>
-                <div class="description-category">
+                <div class="description-category ">
                     <h6> Rules</h6>
-                    <p> <i>Hover on button</i></p>
-                    <ul>
-                        <li>Cursor changes to pointer</li>
-                        <li>Pin icon moves up 5px and right 5px in 0.3s</li>
-                        <li>Color changes to #</li>
-                    </ul>
-                    <p> <i>Hover off button</i></p>
-                    <ul>
-                        <li>Pointer changes to cursor off hover</li>
-                        <li>Pin icon moves to original position in 0.3s</li>
-                        <li>Color changes to original shade</li>
-                    </ul>
-                    <p> <i>Click button</i></p>
-                    <ul>
-                        <li>Pin icon moves to original position in 0.1s</li>
-                        <li>Opacity 100 for action lines image</li>
-                    </ul>
-                    <p> <i>Mouseout after click</i></p>
-                    <ul>
-                        <li>Opacity 0 for action lines image</li>
-                    </ul>
+                    <div class="description-fit">
+                        <div>
+                            <p> <i>Hover on button</i></p>
+                            <ul>
+                                <li>Cursor changes to pointer</li>
+                                <li>Color changes to #9E2224</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p> <i>Hover off button</i></p>
+                            <ul>
+                                <li>Pointer changes to cursor off hover or zoom-in cursor (if still hover on image)</li>
+                                <li>Color changes to original shade</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p> <i>Click on button</i></p>
+                            <ul>
+                                <li>"Save" text changes to "Saved"</li>
+                                <li> Color changes to black</li>
+                                <li> Drop down menu left of button turns to link</li>
+                                <li> Pop up message slide up, stays 3s, expands and fades out </li>
+                                <li> "Save" record is set to true </li>
+                                <li> Share and More button slides out to right</li>
+                                <li> Edit button fades in</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p> <i>Click off button</i></p>
+                            <ul>
+                                <li>"Saved" text changes to "Save"</li>
+                                <li> Color changes to original shade</li>
+                                <li> Link left of button turns to dropdown menu</li>
+                                <li> Pop up message slide up, stays 3s, expands and fades out </li>
+                                <li> "Save" record is set to false </li>
+                                <li> Edit button fades out</li>
+                                <li> Share and More button slides in from right</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="description-category">
                     <h6> Feedback</h6>
-                    <p> <i>Hover on button</i></p>
-                    <ul>
-                        <li>Cursor changes to pointer</li>
-                        <li>Van icon moves left on x-axis by 50px</li>
-                        <li>Fade in to y-offset shadow 20px</li>
-                    </ul>
-                    <p> <i>Hover off button</i></p>
-                    <ul>
-                        <li>Pointer changes to cursor off hover</li>
-                        <li>Van icon moves right on x-axis to the original position</li>
-                        <li>Fade out of y-offset shadow 20px to no shadow</li>
-                    </ul>
+                    <div>
+                        <p> <i>Hover on button</i></p>
+                        <ul>
+                            <li>Cursor changes to pointer</li>
+                            <li>Color changes to #9E2224</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p> <i>Hover off button</i></p>
+                        <ul>
+                            <li>Pointer changes to cursor off hover or zoom-in cursor (if still hover on image)</li>
+                            <li>Color changes to original shade</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p> <i>Click on button</i></p>
+                        <ul>
+                            <li>"Save" text changes to "Saved"</li>
+                            <li> Color changes to black</li>
+                            <li> Drop down menu left of button turns to link</li>
+                            <li> Pop up message slide up, stays 3s, expands and fades out </li>
+                            <li> Share and More button slides out to right</li>
+                            <li> Edit button fades in</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p> <i>Click off button</i></p>
+                        <ul>
+                            <li>"Saved" text changes to "Save"</li>
+                            <li> Color changes to original shade</li>
+                            <li> Link left of button turns to dropdown menu</li>
+                            <li> Pop up message slide up, stays 3s, expands and fades out </li>
+                            <li> Edit button fades out</li>
+                            <li> Share and More button slides in from right</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="description-category">
-                    <h6> Loops & Modes</h6>
-                    <ul>
-                        <li>N/A</li>
-                    </ul>
+                    <h6 class="description-width"> Loops & Modes</h6>
+                    <div>
+                        <p> <i>Click on button</i></p>
+                        <ul>
+                            <li> Editing button appears to edit saved pin details </li>
+                            <li> Pop up message appears </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p> <i>Click off button</i></p>
+                        <ul>
+                            <li> Editing button disappears </li>
+                            <li> Pop up message appears </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
           
         </section>
         <section class="section">
-            <h3>Alpha Static Images</h3>
+            <h3>Beta Static Images</h3>
             <div class="section__images">
                 <div>
                     <p class="sub-text sub-text--top">BEFORE</p>
