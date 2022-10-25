@@ -13,15 +13,27 @@ pinObj.addEventListener('click', () => {
 
   })
 
-  button.addEventListener('click', () => {
+  //hover on
+  button.addEventListener('mouseenter', () => {
+    button.classList.add('button-hover');
+
+  })
+  //hover off
+  button.addEventListener('mouseleave', () => {
+    button.classList.remove('button-hover');
+
+  })
+  //click
+  button.addEventListener('mouseup', () => {
+    button.classList.remove('button-hover');
     button.classList.add('button-change');
 
   })
 
-  button.addEventListener.off('click', () => {
-    button.classList.remove('button-change');
+  // button.addEventListener.off('click', () => {
+  //   button.classList.remove('button-change');
 
-  })
+  // })
 
 // it works but only after hoveroff. WHY??
 

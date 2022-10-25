@@ -39,11 +39,11 @@
     right: 10px;
 }
 
-.button:hover {
+.button-hover {
  background-color: #9E2224;
-
 }
 /* TRIAL */
+
 .button-change {
     background-color:black;
 }
