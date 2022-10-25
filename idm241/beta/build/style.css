@@ -39,12 +39,16 @@
     right: 10px;
 }
 
-.button-hover {
+.button-hover-on {
  background-color: #9E2224;
+}
+
+.button-hover-off {
+    background-color: #E60023;
 }
 /* TRIAL */
 
-.button-change {
+.button-click {
     background-color:black;
 }
 

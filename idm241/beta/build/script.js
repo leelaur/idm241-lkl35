@@ -15,18 +15,24 @@ pinObj.addEventListener('click', () => {
 
   //hover on
   button.addEventListener('mouseenter', () => {
-    button.classList.add('button-hover');
+    button.classList.add('button-hover-on');
 
   })
   //hover off
   button.addEventListener('mouseleave', () => {
-    button.classList.remove('button-hover');
+    button.classList.remove('button-hover-on');
 
   })
   //click
   button.addEventListener('mouseup', () => {
-    button.classList.remove('button-hover');
-    button.classList.add('button-change');
+    button.classList.remove('button-hover-on');
+    button.classList.add('button-click');
+
+  })
+  //click off
+  button.addEventListener('mouseUp', () => {
+    button.classList.toggle('button-hover-off');
+    // button.classList.toggle('button-click');
 
   })
 
