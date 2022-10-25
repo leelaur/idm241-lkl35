@@ -8,6 +8,7 @@ const button = document.getElementById('button');
 
 // pinObj.addEventListener ("click", pinFun);
 pinObj.addEventListener('click', () => {
+  console.log ('Pin Clicked!');
     pinObj.classList.add('pin-animation');
 
   })

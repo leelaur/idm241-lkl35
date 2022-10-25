@@ -48,21 +48,22 @@
     background-color:black;
 }
 
-.button:hover > .pin {
+/* .button:hover > .pin {
     transform: translateX(5px) translateY(-5px);
     transition: transform 0.3s;
 }
 
 .button:not(:hover) > .pin  {
     transform: translateX(0) translateY(0);
-    transition: transform 0.2s;
-}
+    transition: transform 0.2s; 
+}*/
 
 /* won't do animation after click */
-.pin-animation  {
-    transform: translateX(0) translateY(0);
+/* .pin-animation  {
+    transform: translateX(10) translateY(20);
     transition: transform 0.1s;
-}
+} */
+
 
 
 /*hover display */
