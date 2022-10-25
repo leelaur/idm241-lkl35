@@ -60,6 +60,7 @@ header {
 .section__images {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .section__description {
@@ -69,6 +70,13 @@ header {
 
 .description-category {
    width: 400px;
+
+   margin-top: 2rem;
+   background-color: #F0F0F0;
+   width: 800px;
+   /* min-height: 384px; */
+   padding: 18px 25px;
+   border-radius: 5px;
 }
 
 .sub-text {
@@ -128,12 +136,12 @@ img {
 
     }
     .description-width {
-        width: 300px;
+        width: 200px;
     }
 
     .description-category {
         margin-top: 2rem;
-        background-color: lightgray;
+        background-color: #F0F0F0;
         width: 800px;
         /* min-height: 384px; */
         padding: 18px 25px;
