@@ -3,8 +3,8 @@
 //actual pin image
 const pinObj = document.getElementById('pinBtn');
 //button
-const button = document.getElementById('button');
-
+const buttonObj = document.getElementById('pinButton');
+//  let isPinned = false;
 
 // pinObj.addEventListener ("click", pinFun);
 // pinObj.addEventListener('click', () => {
@@ -17,14 +17,25 @@ const button = document.getElementById('button');
 //HERE
 
   //hover on
-  button.addEventListener('mouseenter', () => {
-    button.classList.add('button-hover-on');
+  buttonObj.addEventListener('mouseenter', () => {
+    buttonObj.classList.add('button-hover-on');
 
 
   })
   //hover off
-  button.addEventListener('mouseleave', () => {
-    button.classList.remove('button-hover-on');
+  buttonObj.addEventListener('mouseleave', () => {
+    buttonObj.classList.remove('button-hover-on');
+
+    // if (isPinned == false){
+    //   button.classList.remove('pinAnim');
+    //   isPinned = true;
+    // }
+
+    // if (isPinned == true) {
+    //   button.classList.add ('pinAnim');
+    //   isPinned = false;
+    // }
+    
     // button.classList.remove('pinAnim');
 
 
@@ -71,15 +82,37 @@ const button = document.getElementById('button');
 //HERE
 
 // click color
-function clickFunction() {
-  button.classList.toggle ("button-click");
-}
+
+button.addEventListener ('click', () => {
+    button.classList.toggle ("button-click");
+  })
+
+
+
+
+var gPinnedflag = false;
 
 //toggle animation
 button.addEventListener ('click', () => {
-    button.classList.toggle('pinAnim');
-  })
 
+  //plays animation only once
+  if (gPinnedflag == false) {
+
+    button.classList.toggle('pinAnim');
+    gPinnedflag = true;
+  }
+
+})
+
+
+
+
+
+//WORKIN TOGGLE ONLY 
+
+// button.addEventListener ('click', () => {
+//   button.classList.toggle('pinAnim');
+//   })
 
 
 
