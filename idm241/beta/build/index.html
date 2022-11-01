@@ -9,74 +9,108 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="entire">
-        <img src="../images/image.jpg" alt="2 people carry a boat in a field" class="image"/>
-        <button class="button" id="button">
-            <img src="../images/pin.png" alt="pin icon" class="pin" id="pinBtn"/>
-        </button>  
-
-    </div>
-
-    <!-- <section class="section">
-        <h3>Beta Descriptions</h3>
-        <div class="section__description">
-            <div class="description-category">
-                <h6> Triggers</h6>
-                <ul>
-                    <li>Hover on pin button</li>
-                    <li> Hover off pin button</li>
-                    <li> Click pin button</li>
-                    <li> Click off pin button</li>
-                </ul>
-            </div>
-            <div class="description-category">
-                <h6> Rules</h6>
-                <p> <i>Hover on button</i></p>
-                <ul>
-                    <li>Cursor changes to pointer</li>
-                    <li>Pin icon moves up 5px and right 5px in 0.3s</li>
-                    <li>Color changes to #9E2224</li>
-                </ul>
-                <p> <i>Hover off button</i></p>
-                <ul>
-                    <li>Pointer changes to cursor off hover</li>
-                    <li>Pin icon moves to original position in 0.3s</li>
-                    <li>Color changes to original shade</li>
-                </ul>
-                <p> <i>Click button</i></p>
-                <ul>
-                    <li>Pin icon moves to original position in 0.1s</li>
-                    <li> Color changes to #9E2224</li>
-                </ul>
-                <p> <i>Click off pin button</i></p>
-                <ul>
-                    <li>Color changes to original shade</li>
-                </ul>
-            </div>
-            <div class="description-category">
-                <h6> Feedback</h6>
-                <p> <i>Hover on button</i></p>
-                <ul>
-                    <li>Cursor changes to pointer</li>
-                    <li>Van icon moves left on x-axis by 50px</li>
-                    <li>Fade in to y-offset shadow 20px</li>
-                </ul>
-                <p> <i>Hover off button</i></p>
-                <ul>
-                    <li>Pointer changes to cursor off hover</li>
-                    <li>Van icon moves right on x-axis to the original position</li>
-                    <li>Fade out of y-offset shadow 20px to no shadow</li>
-                </ul>
-            </div>
-            <div class="description-category">
-                <h6 class="description-width"> Loops & Modes</h6>
-                <ul>
-                    <li>N/A</li>
-                </ul>
-            </div>
+    <div class="wrapper">
+        <header>
+            <img src="../images/icon.png" alt="Pinterest logo" class="logo"/>
+            <h1> IDM 241: Microinteractions - Beta Build</h1>
+            <p class="sub-title--top"> Pinterest saving pin - <a href="https://www.pinterest.com" class="link" target="_blank">https://www.pinterest.com</a></p>
+        </header>
+        <div class="entire">
+            <img src="../images/image.jpg" alt="2 people carry a boat in a field" class="image"/>
+            <button class="button" id="button" onclick="clickFunction()">
+                <img src="../images/pin.png" alt="pin icon" class="pin pinAnim" id="pinBtn" />
+            </button>  
+    
         </div>
-      
-    </section> -->
+    
+        <section class="section">
+            <h3>Beta Build Descriptions</h3>
+            <div class="section__description">
+                <div class="description-category">
+                    <h6> Triggers</h6>
+                    <ul>
+                        <li>Hover on pin button</li>
+                        <li> Hover off pin button</li>
+                        <li> Click on pin button</li>
+                        <li> Click off pin button</li>
+                    </ul>
+                </div>
+                <div class="description-category ">
+                    <h6> Rules</h6>
+                    <div class="description-fit">
+                        <div>
+                            <p> <i>Hover on button</i></p>
+                            <ul>
+                                <li>Zoom in cursor changes to pointer</li>
+                                <li>Color changes to #9E2224</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p> <i>Hover off button</i></p>
+                            <ul>
+                                <li>Pointer changes to zoom-in cursor (if still hover on image)</li>
+                                <li>Color changes to original shade</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p> <i>Click on button</i></p>
+                            <ul>
+                                <li>Pin button color changes to black</li>
+                                <li> Pin icon moves up 5px and right 5px in 0.1s, then down 5px and left 5px to original position</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p> <i>Click off button</i></p>
+                            <ul>
+                                <li>Pin button color changes to #9E2224 (hover color)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="description-category">
+                    <h6> Feedback</h6>
+                    <div class="description-fit">
+                        <div>
+                            <p> <i>Hover on button</i></p>
+                            <ul>
+                                <li>Zoom in cursor changes to pointer</li>
+                                <li>Color changes to #9E2224</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p> <i>Hover off button</i></p>
+                            <ul>
+                                <li>Pointer changes to zoom-in cursor (if still hover on image)</li>
+                                <li>Color changes to original shade</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p> <i>Click on button</i></p>
+                            <ul>
+                                <li>Pin button color changes to black</li>
+                                <li> Pin icon moves up 5px and right 5px in 0.1s, then down 5px and left 5px to original position</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p> <i>Click off button</i></p>
+                            <ul>
+                                <li>Pin button color changes to #9E2224 (hover color) </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="description-category">
+                    <h6 class="description-width"> Loops & Modes</h6>
+                    <div>
+                        <p> N/A</p>
+                    </div>
+                </div>
+            </div>
+          
+        </section>
+        
+    </div>
+    
 </body>
 <script src="script.js">
   
