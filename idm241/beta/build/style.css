@@ -155,10 +155,6 @@ img {
     border-radius: 15px;
 }
 
-.image:hover {
-   
-    cursor: zoom-in;
-}
 
 /* pin save button */
 .pin {
@@ -199,10 +195,15 @@ img {
 
 
 /*hover display */
-.image:hover + #pinButton {
-    display: inline-block;
-    cursor: pointer;
+.image:hover + .classButton{
+    /*on hover of the image, the button will show up */
+    display: inline-block;   
 }
+
+.image:hover {
+    cursor: zoom-in;
+}
+
 
 .entire {
     position: relative;
@@ -236,7 +237,7 @@ img {
     }	
 }
 
-.pinAnim > .pin {
+.playAnim  {
     animation: pinAnim 1s ;
 }
 
