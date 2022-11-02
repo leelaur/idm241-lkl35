@@ -10,11 +10,9 @@ const buttonObj = document.getElementById('pinButton');
     buttonObj.classList.add('button-hover-on');
     buttonObj.classList.remove('button-hover-off');
     buttonObj.style.cssText= 'display: inline-block; cursor: pointer;';
-
-
   })
 
-  var gPinnedflag = false;
+  // var gPinnedflag = false;
 
   // //hover off
   buttonObj.addEventListener('mouseleave', () => {
@@ -22,29 +20,30 @@ const buttonObj = document.getElementById('pinButton');
     buttonObj.classList.add('button-hover-off');
     buttonObj.style.removeProperty ('display', 'cursor');
 
-    if (gPinnedflag == true) {
+    // if (gPinnedflag == true) {
 
-      pinObj.classList.remove('playAnim');
-      gPinnedflag = true;
-    }
+    //   pinObj.classList.remove('playAnim');
+    //   gPinnedflag = true;
+    // }
 
   })
+ 
 
 // click color
 
 buttonObj.addEventListener ('click', () => {
-    buttonObj.classList.toggle ('button-click');
+  pinObj.classList.toggle('playAnim');
+  buttonObj.classList.toggle ('button-click');
+})
 
-      //plays animation only once
-  if (gPinnedflag == false) {
 
-    pinObj.classList.add('playAnim');
-    gPinnedflag = true;
-  }
-  else {
-    gPinnedflag = false;
-  }
-  })
+var yes = buttonObj.addEventListener('mouseleave');
+
+if (yes) {
+pinObj.classList.remove ('playAnim');
+}
+ 
+
 
 
 //toggle animation
@@ -58,29 +57,3 @@ buttonObj.addEventListener ('click', () => {
 //   }
 
 // })
-
-
-
-
-
-//WORKIN TOGGLE ONLY 
-
-// button.addEventListener ('click', () => {
-//   button.classList.toggle('pinAnim');
-//   })
-
-
-
-
-
-//ATTEMPT USING BOOLEAN??
-//   const timesClicked = 0;
-//   button.addEventListener ('click', () => {
-//     button.classList.add('pinAnim');
-//     timesClicked++;
-//   })
-
-//   //check if the number is even
-// if(timesClicked % 2 == 0) {
-//   console.log("The number is even.");
-// });
