@@ -10,9 +10,11 @@ const buttonObj = document.getElementById('pinButton');
     buttonObj.classList.add('button-hover-on');
     buttonObj.classList.remove('button-hover-off');
     buttonObj.style.cssText= 'display: inline-block; cursor: pointer;';
+
+
   })
 
-  // var gPinnedflag = false;
+  var gPinnedflag = false;
 
   // //hover off
   buttonObj.addEventListener('mouseleave', () => {
@@ -27,22 +29,14 @@ const buttonObj = document.getElementById('pinButton');
     // }
 
   })
- 
 
 // click color
 
 buttonObj.addEventListener ('click', () => {
-  pinObj.classList.toggle('playAnim');
   buttonObj.classList.toggle ('button-click');
+  pinObj.classList.toggle ('playAnim');
+  
 })
-
-
-var yes = buttonObj.addEventListener('mouseleave');
-
-if (yes) {
-pinObj.classList.remove ('playAnim');
-}
- 
 
 
 
