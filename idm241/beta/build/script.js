@@ -1,7 +1,7 @@
 //actual pin image
 const pinObj = document.getElementById('pinImg');
 //button
-const buttonObj = document.getElementById('pinButton');
+const buttonObj = document.querySelector(".classButton");
 
 
 
@@ -22,19 +22,25 @@ const buttonObj = document.getElementById('pinButton');
     buttonObj.classList.add('button-hover-off');
     buttonObj.style.removeProperty ('display', 'cursor');
 
-    // if (gPinnedflag == true) {
+  })
 
-    //   pinObj.classList.remove('playAnim');
-    //   gPinnedflag = true;
-    // }
-
+  pinObj.addEventListener('mouseleave', () => {
+    pinObj.classList.remove ('playAnim');
+    gPinnedflag= true;
   })
 
 // click color
 
 buttonObj.addEventListener ('click', () => {
   buttonObj.classList.toggle ('button-click');
-  pinObj.classList.toggle ('playAnim');
+
+  if (gPinnedflag== false) {
+    pinObj.classList.add ('playAnim');
+  }
+  else if (gPinnedflag==true) {
+    pinObj.classList.remove ('playAnim');
+    gPinnedflag = false;
+  }
   
 })
 

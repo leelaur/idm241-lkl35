@@ -179,6 +179,7 @@ img {
     right: 12px;
 }
 
+
 .button-hover-on {
  background-color: #9E2224;
 }
@@ -202,6 +203,7 @@ img {
 
 .image:hover {
     cursor: zoom-in;
+    /* display: block; */
 }
 
 
