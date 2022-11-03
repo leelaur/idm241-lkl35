@@ -195,18 +195,6 @@ img {
 
 
 
-/*hover display */
-.image:hover + .classButton{
-    /*on hover of the image, the button will show up */
-    display: inline-block;   
-}
-
-.image:hover {
-    cursor: zoom-in;
-    /* display: block; */
-}
-
-
 .entire {
     position: relative;
     width: 250px;
@@ -239,7 +227,7 @@ img {
     }	
 }
 
-.playAnim  {
+.pinAnim  {
     animation: pinAnim 1s ;
 }
 

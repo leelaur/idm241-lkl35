@@ -2,47 +2,49 @@
 const pinObj = document.getElementById('pinImg');
 //button
 const buttonObj = document.querySelector(".classButton");
-
+const imgObj = document.querySelector('.image');
 
 
   //hover on
   buttonObj.addEventListener('mouseenter', () => {
     buttonObj.classList.add('button-hover-on');
     buttonObj.classList.remove('button-hover-off');
-    buttonObj.style.cssText= 'display: inline-block; cursor: pointer;';
+    buttonObj.style.cssText= ' cursor: pointer;';
+    buttonObj.style.display="block";
+
+
+
+  })
+//hover on image
+  imgObj.addEventListener('mouseenter', () => {
+    buttonObj.style.display="block";
+    imgObj.style.cssText= 'cursor:zoom-in;';
 
 
   })
 
-  var gPinnedflag = false;
+  //hover off image BUTTON
+  imgObj.addEventListener('mouseleave', () => {
+    buttonObj.style.display="none";
+
+  })
 
   // //hover off
   buttonObj.addEventListener('mouseleave', () => {
     buttonObj.classList.remove('button-hover-on');
     buttonObj.classList.add('button-hover-off');
-    buttonObj.style.removeProperty ('display', 'cursor');
 
-  })
 
-  pinObj.addEventListener('mouseleave', () => {
-    pinObj.classList.remove ('playAnim');
-    gPinnedflag= true;
   })
 
 // click color
 
 buttonObj.addEventListener ('click', () => {
   buttonObj.classList.toggle ('button-click');
-
-  if (gPinnedflag== false) {
-    pinObj.classList.add ('playAnim');
-  }
-  else if (gPinnedflag==true) {
-    pinObj.classList.remove ('playAnim');
-    gPinnedflag = false;
-  }
+  pinObj.classList.toggle ('pinAnim');
   
 })
+
 
 
 
