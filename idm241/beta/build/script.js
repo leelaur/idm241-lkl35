@@ -19,13 +19,13 @@ const imgObj = document.querySelector('.image');
   imgObj.addEventListener('mouseenter', () => {
     buttonObj.style.display="block";
     imgObj.style.cssText= 'cursor:zoom-in;';
-
-
+    pinObj.classList.remove ('pinAnim');
   })
 
   //hover off image BUTTON
   imgObj.addEventListener('mouseleave', () => {
     buttonObj.style.display="none";
+    pinObj.classList.remove ('pinAnim');
 
   })
 
@@ -38,24 +38,17 @@ const imgObj = document.querySelector('.image');
   })
 
 // click color
-
+let gPinDown = false;
 buttonObj.addEventListener ('click', () => {
   buttonObj.classList.toggle ('button-click');
-  pinObj.classList.toggle ('pinAnim');
+  console.log ("pin click!");
+  pinObj.classList.add ('pinAnim');
+  
+  if (gPinDown==false) {
+    gPinDown = true;
+    console.log ("pin animate!");
+  } 
   
 })
 
 
-
-
-//toggle animation
-// buttonObj.addEventListener ('click', () => {
-
-//   //plays animation only once
-//   if (gPinnedflag == false) {
-
-//     pinObj.classList.add('pinAnim');
-//     gPinnedflag = true;
-//   }
-
-// })
