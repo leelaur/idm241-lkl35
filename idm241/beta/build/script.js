@@ -5,49 +5,52 @@ const buttonObj = document.querySelector(".classButton");
 const imgObj = document.querySelector('.image');
 
 
-  //hover on
+  //hover on pin button
   buttonObj.addEventListener('mouseenter', () => {
     buttonObj.classList.add('button-hover-on');
     buttonObj.classList.remove('button-hover-off');
     buttonObj.style.cssText= ' cursor: pointer;';
     buttonObj.style.display="block";
-
-
-
   })
-//hover on image
+
+   // //hover off pin button
+   buttonObj.addEventListener('mouseleave', () => {
+    buttonObj.classList.remove('button-hover-on');
+    buttonObj.classList.add('button-hover-off');
+  })
+
+
+
+//hover on card image
   imgObj.addEventListener('mouseenter', () => {
     buttonObj.style.display="block";
     imgObj.style.cssText= 'cursor:zoom-in;';
-    pinObj.classList.remove ('pinAnim');
   })
 
-  //hover off image BUTTON
+  //hover off card image 
   imgObj.addEventListener('mouseleave', () => {
     buttonObj.style.display="none";
     pinObj.classList.remove ('pinAnim');
 
   })
 
-  // //hover off
-  buttonObj.addEventListener('mouseleave', () => {
-    buttonObj.classList.remove('button-hover-on');
-    buttonObj.classList.add('button-hover-off');
+ 
 
-
-  })
-
-// click color
+// click pin
 let gPinDown = false;
 buttonObj.addEventListener ('click', () => {
   buttonObj.classList.toggle ('button-click');
   console.log ("pin click!");
-  pinObj.classList.add ('pinAnim');
-  
+
+  // animate only when pin was clicked
   if (gPinDown==false) {
     gPinDown = true;
+    pinObj.classList.add ('pinAnim');
     console.log ("pin animate!");
-  } 
+  } else {
+    gPinDown = false;
+    pinObj.classList.remove ('pinAnim');
+  }
   
 })
 
