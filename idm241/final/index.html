@@ -12,58 +12,89 @@
     <div class="wrapper">
         <header>
             <img src="images/icon.png" alt="Pinterest logo" class="logo"/>
-            <h1> IDM 241: Microinteractions - Beta Build</h1>
+            <h1> IDM 241: Microinteractions - Final</h1>
             <p class="sub-title--top"> Pinterest saving pin - <a href="https://www.pinterest.com" class="link" target="_blank">https://www.pinterest.com</a></p>
         </header>
         
-        <div class="entire">
-             <!-- change class name for image less generic  -->
-            <img src="images/image.jpg" alt="2 people carry a boat in a field" class="image"/>
-            <button class="classButton" id="pinButton">
-                <img src="images/pin.png" alt="pin icon" class="pin" id="pinImg" />
-            </button>  
-        </div>
     
         <section class="section">
-            <h3>Beta Build Descriptions</h3>
+            <h3>Final Descriptions</h3>
             <div class="section__description">
                 <div class="description-category">
                     <h6> Triggers</h6>
                     <ul>
-                        <li>Hover on pin button</li>
-                        <li> Hover off pin button</li>
-                        <li> Click on pin button</li>
-                        <li> Click off pin button</li>
+                        <li>Hover on/off image card</li>
+                        <li>Hover on/off pin button</li>
+                        <li> Click on/off pin button</li>
+                        <li> Hover on/off toast button</li>
+                        <li>Click on toast button</li>
                     </ul>
                 </div>
                 <div class="description-category ">
                     <h6> Rules</h6>
                     <div class="description-fit">
                         <div>
-                            <p> <i>Hover on button</i></p>
+                            <p> <i>Hover on image card</i></p>
                             <ul>
-                                <li>Zoom in cursor changes to pointer</li>
+                                <li>Fade in to filter 50%</li>
+                                <li>Default cursor to zoom-in cursor</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p> <i>Hover off image card</i></p>
+                            <ul>
+                                <li>Fade out of filter</li>
+                                <li>Zoom-in cursor to default cursor</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p> <i>Hover on pin button</i></p>
+                            <ul>
+                                <li>Zoom-in cursor changes to pointer</li>
                                 <li>Color changes to #9E2224</li>
                             </ul>
                         </div>
                         <div>
-                            <p> <i>Hover off button</i></p>
+                            <p> <i>Hover off pin button</i></p>
                             <ul>
                                 <li>Pointer changes to zoom-in cursor (if still hover on image)</li>
                                 <li>Color changes to original shade</li>
                             </ul>
                         </div>
                         <div>
-                            <p> <i>Click on button</i></p>
+                            <p> <i>Click on pinbutton</i></p>
                             <ul>
                                 <li>Pin button color changes to black</li>
                                 <li> Pin icon moves up 5px and right 5px in 0.1s, then down 5px and left 5px to original position</li>
+                                <li>"Success" toast puff-in from top and fade away after 5s</li>
                             </ul>
                         </div>
                         <div>
-                            <p> <i>Click off button</i></p>
+                            <p> <i>Click off pin button</i></p>
                             <ul>
                                 <li>Pin button color changes to #9E2224 (hover color)</li>
+                                <li>"Removed" toast slides up from the bottom and stays for 5s before fade out </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p> <i>Hover on toast "Undo" button</i></p>
+                            <ul>
+                                <li>Default cursor to pointer</li>
+                                <li>Background turns gray</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p> <i>Hover off toast "Undo" button</i></p>
+                            <ul>
+                                <li> Pointer to default cursor</li>
+                                <li>Background turns original shade</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p> <i>Click on toast button</i></p>
+                            <ul>
+                                <li>Toast condenses and dissolves in 5s</li>
+                                <li>"Removed" toast slides up from the bottom and stays for 5s before fade out</li>
                             </ul>
                         </div>
                     </div>
@@ -72,30 +103,67 @@
                     <h6> Feedback</h6>
                     <div class="description-fit">
                         <div>
-                            <p> <i>Hover on button</i></p>
+                            <p> <i>Hover on image card</i></p>
                             <ul>
-                                <li>Zoom in cursor changes to pointer</li>
+                                <li>Fade in to filter 50%</li>
+                                <li>Default cursor to zoom-in cursor</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p> <i>Hover off image card</i></p>
+                            <ul>
+                                <li>Fade out of filter</li>
+                                <li>Zoom-in cursor to default cursor</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p> <i>Hover on pin button</i></p>
+                            <ul>
+                                <li>Zoom-in cursor changes to pointer</li>
                                 <li>Color changes to #9E2224</li>
                             </ul>
                         </div>
                         <div>
-                            <p> <i>Hover off button</i></p>
+                            <p> <i>Hover off pin button</i></p>
                             <ul>
                                 <li>Pointer changes to zoom-in cursor (if still hover on image)</li>
                                 <li>Color changes to original shade</li>
                             </ul>
                         </div>
                         <div>
-                            <p> <i>Click on button</i></p>
+                            <p> <i>Click on pinbutton</i></p>
                             <ul>
                                 <li>Pin button color changes to black</li>
                                 <li> Pin icon moves up 5px and right 5px in 0.1s, then down 5px and left 5px to original position</li>
+                                <li>"Success" toast puff-in from top and fade away after 5s</li>
                             </ul>
                         </div>
                         <div>
-                            <p> <i>Click off button</i></p>
+                            <p> <i>Click off pin button</i></p>
                             <ul>
-                                <li>Pin button color changes to #9E2224 (hover color) </li>
+                                <li>Pin button color changes to #9E2224 (hover color)</li>
+                                <li>"Removed" toast slides up from the bottom and stays for 5s before fade out </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p> <i>Hover on toast "Undo" button</i></p>
+                            <ul>
+                                <li>Default cursor to pointer</li>
+                                <li>Background turns gray</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p> <i>Hover off toast "Undo" button</i></p>
+                            <ul>
+                                <li> Pointer to default cursor</li>
+                                <li>Background turns original shade</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p> <i>Click on toast button</i></p>
+                            <ul>
+                                <li>Toast condenses and dissolves in 5s</li>
+                                <li>"Removed" toast slides up from the bottom and stays for 5s before fade out</li>
                             </ul>
                         </div>
                     </div>
@@ -103,11 +171,84 @@
                 <div class="description-category">
                     <h6 class="description-width"> Loops & Modes</h6>
                     <div>
-                        <p> N/A</p>
+                        <div class="description-fit">
+                            <div>
+                                <p>N/A</p>
+                                <ul>
+                                  <!-- <li></li> -->
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
           
+        </section>
+        <!--IMAGES-->
+        <section class="section">
+            <h3>Final Static Images</h3>
+            <div>
+                <p class="explanation">Hover on card, hover on button, click button</p>
+                <hr>
+                <div class="section__images">
+                    <div>
+                        <img src="images/static/Frame 1.png" alt="Pinterest image" />
+                    </div>
+                    <div>
+                        <img src="images/static/Frame 2.png" alt="Pinterest image"/>
+                    </div>
+                    <div>
+                        <img src="images/static/Frame 3.png" alt="Pinterest image"/>
+                    </div>
+                    <div>
+                        <img src="images/static/Frame 4.png" alt="Pinterest image"/>
+                    </div>
+                    <div>
+                        <img src="images/static/Frame 5.png" alt="Pinterest image" />
+                    </div>
+                    <div>
+                        <img src="images/static/Frame 6.png" alt="Pinterest image"/>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="explanation">Click pin, hover toast button, click toast button</p>
+                <hr>
+                <div class="section__images">
+                    <div>
+                        <img src="images/static/Frame 7.png" alt="Pinterest image" />
+                    </div>
+                    <div>
+                        <img src="images/static/Frame 8.png" alt="Pinterest image"/>
+                    </div>
+                    <div>
+                        <img src="images/static/Frame 9.png" alt="Pinterest image" />
+                    </div>
+                    <div>
+                        <img src="images/static/Frame 10.png" alt="Pinterest image" />
+                    </div>
+                    <div>
+                        <img src="images/static/Frame 11.png" alt="Pinterest image"/>
+                    </div>
+                    <div>
+                        <img src="images/static/Frame 12.png" alt="Pinterest image" />
+                    </div>
+                </div>
+            </div>
+         
+            <div>
+                <p class="explanation">Click off pin button</p>
+                <hr>
+                <div class="section__images">
+                    <div>
+                        <img src="images/static/Frame 13.png" alt="Pinterest image"/>
+                    </div>
+                    <div>
+                        <img src="images/static/Frame 14.png" alt="Pinterest image" />
+                    </div>
+                </div>
+            </div>
+
         </section>
         
     </div>

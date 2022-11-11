@@ -205,33 +205,27 @@ img {
 
 }
 
-.entire:hover > .image{
-    filter: brightness(60%);
-    transition: filter 0.1s ease-in-out;
-}
-/* 
-.entire:after > .image{
-    filter: brightness(0%);
-    transition: filter 0.1s ease-in-out;
-} */
-
-/* animation */
-
-
-@keyframes pinAnim {
-	0% {transform: translateX(1px) translateY(-1px);
-        transition: transform 0.5s;
-    }
-    33% {
-        transform: translateX(6px) translateY(-6px); 
-        transition: transform 0.5s;
-    }
-	100% {
-        transform: translateX(0px) translateY(0px); 
-        transition: transform 0.1s;
-    }	
+/* STATIC IMAGES */
+.section__description, .section__images {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 1rem;
 }
 
-.pinAnim  {
-    animation: pinAnim 1s;
+.section__images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section__description {
+    display: flex;
+    justify-content: center;
+}
+
+.explanation {
+    margin-top: 50px;
+    font-weight: 700;
+    font-size: 14pt;
 }
