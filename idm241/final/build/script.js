@@ -27,7 +27,7 @@ const close = document.querySelector('.close-arrow');
 //hover on card image
   imgObj.addEventListener('mouseenter', () => {
     buttonObj.style.display="block";
-    imgObj.style.cssText= 'cursor:zoom-in;';
+    imgObj.style.cssText= 'cursor:zoom-in; transition: filter 0.1s ease-in-out;';
   })
 
   //hover off card image 

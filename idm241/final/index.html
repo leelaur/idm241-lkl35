@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IDM 241 - Beta Build</title>
+    <title>IDM 241 - Final Description</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -26,8 +26,10 @@
                         <li>Hover on/off image card</li>
                         <li>Hover on/off pin button</li>
                         <li> Click on/off pin button</li>
-                        <li> Hover on/off toast button</li>
-                        <li>Click on toast button</li>
+                        <li> Hover on/off "Undo" button</li>
+                        <li> Click on "Undo" button</li>
+                        <li> Hover on/off "X" button </li>
+                        <li> Click on "X" button </li>
                     </ul>
                 </div>
                 <div class="description-category ">
@@ -62,7 +64,7 @@
                             </ul>
                         </div>
                         <div>
-                            <p> <i>Click on pinbutton</i></p>
+                            <p> <i>Click on pin button</i></p>
                             <ul>
                                 <li>Pin button color changes to black</li>
                                 <li> Pin icon moves up 5px and right 5px in 0.1s, then down 5px and left 5px to original position</li>
@@ -77,24 +79,44 @@
                             </ul>
                         </div>
                         <div>
-                            <p> <i>Hover on toast "Undo" button</i></p>
+                            <p> <i>Hover on "Undo" button</i></p>
                             <ul>
-                                <li>Default cursor to pointer</li>
-                                <li>Background turns gray</li>
+                                <li>Default cursor turns to pointer </li>
+                                <li>Background turns to #AAAAAA</li>
                             </ul>
                         </div>
                         <div>
-                            <p> <i>Hover off toast "Undo" button</i></p>
+                            <p> <i>Hover off "Undo" button</i></p>
                             <ul>
                                 <li> Pointer to default cursor</li>
                                 <li>Background turns original shade</li>
                             </ul>
                         </div>
                         <div>
-                            <p> <i>Click on toast button</i></p>
+                            <p> <i>Click on "Undo" button</i></p>
                             <ul>
-                                <li>Toast condenses and dissolves in 5s</li>
-                                <li>"Removed" toast slides up from the bottom and stays for 5s before fade out</li>
+                                <li> Modal condenses and dissolves in 5s</li>
+                                <li>"Removed" toast modal slides up from the bottom and stays for 5s before fade out</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p> <i>Hover on "X" button</i></p>
+                            <ul>
+                                <li>Color turns to #AAAAAA</li>
+                                <li> Default pointer turns to cursor</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p> <i>Hover off "X" button</i></p>
+                            <ul>
+                                <li>Color turns to original shade</li>
+                                <li>Pointer turns to default cursor</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p> <i>Click on "X" button</i></p>
+                            <ul>
+                                <li>Modal condenses and dissolves in 5s</li>
                             </ul>
                         </div>
                     </div>
@@ -131,7 +153,7 @@
                             </ul>
                         </div>
                         <div>
-                            <p> <i>Click on pinbutton</i></p>
+                            <p> <i>Click on pin button</i></p>
                             <ul>
                                 <li>Pin button color changes to black</li>
                                 <li> Pin icon moves up 5px and right 5px in 0.1s, then down 5px and left 5px to original position</li>
@@ -146,24 +168,44 @@
                             </ul>
                         </div>
                         <div>
-                            <p> <i>Hover on toast "Undo" button</i></p>
+                            <p> <i>Hover on "Undo" button</i></p>
                             <ul>
-                                <li>Default cursor to pointer</li>
-                                <li>Background turns gray</li>
+                                <li>Default cursor turns to pointer </li>
+                                <li>Background turns to #AAAAAA</li>
                             </ul>
                         </div>
                         <div>
-                            <p> <i>Hover off toast "Undo" button</i></p>
+                            <p> <i>Hover off "Undo" button</i></p>
                             <ul>
                                 <li> Pointer to default cursor</li>
                                 <li>Background turns original shade</li>
                             </ul>
                         </div>
                         <div>
-                            <p> <i>Click on toast button</i></p>
+                            <p> <i>Click on "Undo" button</i></p>
                             <ul>
-                                <li>Toast condenses and dissolves in 5s</li>
-                                <li>"Removed" toast slides up from the bottom and stays for 5s before fade out</li>
+                                <li> Modal condenses and dissolves in 5s</li>
+                                <li>"Removed" toast modal slides up from the bottom and stays for 5s before fade out</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p> <i>Hover on "X" button</i></p>
+                            <ul>
+                                <li>Color turns to red</li>
+                                <li> Default pointer turns to cursor</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p> <i>Hover off "X" button</i></p>
+                            <ul>
+                                <li>Color turns to original shade</li>
+                                <li>Pointer turns to default cursor</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p> <i>Click on "X" button</i></p>
+                            <ul>
+                                <li>Modal condenses and dissolves in 5s</li>
                             </ul>
                         </div>
                     </div>
@@ -173,9 +215,9 @@
                     <div>
                         <div class="description-fit">
                             <div>
-                                <p>N/A</p>
                                 <ul>
                                   <!-- <li></li> -->
+                                  <li>Modal pops up and remains on screen until the user interacts with it (closes the "x" or undos save)</li>
                                 </ul>
                             </div>
                         </div>
@@ -212,7 +254,7 @@
                 </div>
             </div>
             <div>
-                <p class="explanation">Click pin, hover toast button, click toast button</p>
+                <p class="explanation">Click pin, hover over "Undo" button, click "Undo" button</p>
                 <hr>
                 <div class="section__images">
                     <div>
@@ -245,6 +287,16 @@
                     </div>
                     <div>
                         <img src="images/static/Frame 14.png" alt="Pinterest image" />
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <p class="explanation">Hover on "X" button</p>
+                <hr>
+                <div class="section__images">
+                    <div>
+                        <img src="images/static/Frame 15.png" alt="Pinterest image"/>
                     </div>
                 </div>
             </div>

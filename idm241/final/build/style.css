@@ -205,10 +205,10 @@ img {
 
 }
 
-.entire:hover > .image{
+/* .entire:hover > .image{
     filter: brightness(60%);
     transition: filter 0.1s ease-in-out;
-}
+} */
 
 /* .entire:after > .image{
     filter: brightness(0%);
