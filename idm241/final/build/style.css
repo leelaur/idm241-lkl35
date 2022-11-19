@@ -5,6 +5,43 @@
     line-height: 1.5;
 }
 
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('../fonts/Inter-Regular.woff2') format('woff2'),
+        url('../fonts/Inter-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Medium.woff2') format('woff2'),
+        url('../fonts/Inter-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Bold.woff2') format('woff2'),
+        url('../fonts/Inter-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Inter-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 /*Fonts*/
 
 h1 {
@@ -150,7 +187,7 @@ img {
 
 /* Build */
 
-.image {
+.photoImg {
     width: 250px;
     border-radius: 15px;
 }
@@ -242,4 +279,96 @@ img {
 .fadeIn {
     animation: fadeIn 0.5s forwards;
     /* animation-timing-function: ease-in-out; */
+}
+
+
+/*Pinned Modal */
+
+.pinnedModal {
+    background-color: black;
+    max-width: 400px;
+    height: 100px;
+
+    padding: 30px 50px;
+
+    position: relative;
+    margin: 0 auto;
+    border-radius: 50px;
+
+}
+
+.pinnedTxt, .xSymbol {
+    color: white;
+}
+
+.pinnedTxt {
+    font-size: 14pt;
+    font-family: 'Inter', Helvetica, sans-serif;
+        font-weight: 500;
+
+
+}
+
+
+.xSymbol {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    /* margin-bottom: 2rem; */
+font-size: 25pt;
+}
+
+.xSymbol:hover {
+    color: #E60023;
+    cursor: pointer;
+}
+
+.modalContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    width: 98%;
+}
+.modalImg {
+    width: 100px;
+}
+.undoBtn {
+    background-color: white;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    border-style: none;
+
+    font-size: 14pt;
+    font-weight: 500;
+}
+
+.undoBtn:hover {
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+/*removed modal */
+.removedModal {
+    background-color: #E60023;
+    border-radius: 100px;
+    /* height: 100px; */
+    max-width: 500px;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.removedTxt {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    text-align: center;
+    font-family: 'Inter', Helvetica, sans-serif;
+color: white;
+font-size: 18pt;
+
 }

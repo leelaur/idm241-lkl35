@@ -2,7 +2,7 @@
 const pinObj = document.getElementById('pinImg');
 //button
 const buttonObj = document.querySelector(".classButton");
-const imgObj = document.querySelector('.image');
+const imgObj = document.querySelector('.photoImg');
 const entire = document.querySelector('.entire');
 
 
