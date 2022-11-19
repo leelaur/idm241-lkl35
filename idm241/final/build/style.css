@@ -161,7 +161,7 @@ img {
     width: 50px;
     height: 50px;
     margin: 0;
-    z-index: 50;
+    z-index: 1000;
 }
 
 
@@ -205,15 +205,11 @@ img {
 
 }
 
-/* .entire:hover > .image{
-    filter: brightness(60%);
-    transition: filter 0.1s ease-in-out;
-} */
+.entire:hover > .image{
+    /* filter: brightness(50%); */
+    /* animation: fadeIn 0.5s; */
+}
 
-/* .entire:after > .image{
-    filter: brightness(0%);
-    transition: filter 0.1s ease-in-out;
-} */
 
 /* animation */
 
@@ -226,60 +222,24 @@ img {
         transform: translateX(6px) translateY(-6px); 
         transition: transform 0.5s;
     }
-	99% {
+	100% {
         transform: translateX(0px) translateY(0px); 
         transition: transform 0.1s;
-        /* content: url(../images/pinned2.png); */
-    }	
-    100% {
-        content: url(../images/pinned2.png);
     }	
 }
 
 .pinAnim  {
-    animation: pinAnim 1s;
+    animation: pinAnim 1s ;
 }
 
-/*MODAL*/
+/*fade in animation*/
 
-.modal-content {
-    background-color: red;
-    z-index: 100;
-    position: absolute;
-    top: 10%;
-    border-radius: 10px;
+@keyframes fadeIn {
+    0% { filter: brightness(100%); }
+    100% { filter: brightness(50%); }
+  }
 
-    width: 80%;
+.fadeIn {
+    animation: fadeIn 0.5s forwards;
+    /* animation-timing-function: ease-in-out; */
 }
-.modal-img {
-    border-radius: 15px;
-    max-width: 40%;
-    z-index: 200;
-background-color: red;
-
-padding: 50px;
-}
-
-.close-arrow {
-    position: absolute;
-    top: 5px;
-    left: 10px;
-
-height: 100px;
-}
-
-/*modal animation*/
- @keyframes slideIn {
-    0% {
-        opacity: 0;
-        /* transform: translateY(0); */
-    }
-    100% {
-        opacity:1;
-        /* transform: translateY(0); */
-    }
- }
-
- .modalUp {
-    animation: slideIn 3s;
- }

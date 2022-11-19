@@ -3,9 +3,7 @@ const pinObj = document.getElementById('pinImg');
 //button
 const buttonObj = document.querySelector(".classButton");
 const imgObj = document.querySelector('.image');
-
-const modal = document.querySelector('.modal');
-const close = document.querySelector('.close-arrow');
+const entire = document.querySelector('.entire');
 
 
   //hover on pin button
@@ -14,6 +12,7 @@ const close = document.querySelector('.close-arrow');
     buttonObj.classList.remove('button-hover-off');
     buttonObj.style.cssText= ' cursor: pointer;';
     buttonObj.style.display="block";
+    imgObj.classList.add('fadeIn');
   })
 
    // //hover off pin button
@@ -27,17 +26,18 @@ const close = document.querySelector('.close-arrow');
 //hover on card image
   imgObj.addEventListener('mouseenter', () => {
     buttonObj.style.display="block";
-    imgObj.style.cssText= 'cursor:zoom-in; transition: filter 0.1s ease-in-out;';
+    imgObj.style.cssText= 'cursor:zoom-in;';
+    imgObj.classList.add('fadeIn');
   })
 
   //hover off card image 
   imgObj.addEventListener('mouseleave', () => {
     buttonObj.style.display="none";
     pinObj.classList.remove ('pinAnim');
+    imgObj.classList.remove('fadeIn');
 
   })
 
- 
 
 // click pin
 let gPinDown = false;
@@ -57,15 +57,4 @@ buttonObj.addEventListener ('click', () => {
   
 })
 
-//modal 
-modal.style.display="none";
-
-imgObj.addEventListener ('click', () => {
-  modal.style.display="block";
-  modal.classList.add ('modalUp');
-})
-
-close.addEventListener ('click', () => {
-  modal.style.display="none";
-})
 
