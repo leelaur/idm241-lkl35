@@ -4,6 +4,13 @@ const pinObj = document.getElementById('pinImg');
 const buttonObj = document.querySelector(".classButton");
 const imgObj = document.querySelector('.photoImg');
 const entire = document.querySelector('.entire');
+//MODAL
+const pinned = document.querySelector('.pinnedModal');
+const undo = document.querySelector('.undoBtn');
+const cancelX = document.querySelector('.xSymbol');
+const pinnedContent = document.querySelector('.modalContent');
+
+const removed = document.querySelector('.removedModal');
 
 
   //hover on pin button
@@ -39,22 +46,81 @@ const entire = document.querySelector('.entire');
   })
 
 
+// pinned and removed modal display none
+pinned.style.display="none";
+removed.style.display="none";
+
 // click pin
 let gPinDown = false;
 buttonObj.addEventListener ('click', () => {
   buttonObj.classList.toggle ('button-click');
   console.log ("pin click!");
 
+
+
+
   // animate only when pin was clicked
   if (gPinDown==false) {
     gPinDown = true;
     pinObj.classList.add ('pinAnim');
     console.log ("pin animate!");
+
+      //modal
+  pinned.style.display="block";
+  pinned.classList.add ('pinnedModalAnim');
+    
+
   } else {
     gPinDown = false;
     pinObj.classList.remove ('pinAnim');
-  }
+    // pinned.style.display="none";
+
+    //removed modal 
+    removed.style.display="block";
+    removed.classList.add ('slide-in');
+    setTimeout(() => {
+      removed.classList.remove ('slide-in');
+      removed.classList.add ('slide-out');
+  
+  }, 5000);
+  setTimeout(() => {
+    removed.style.display="none";
+    removed.classList.remove ('slide-out');
+}, 6000);
+
+    if (pinned.style.display="block") {
+      pinned.classList.add ('fade-out');
+      setTimeout(() => {
+        pinned.classList.remove ('fade-out');
+        pinned.style.display="none";
+    }, 1000);
+    }
+    } 
   
 })
+
+// close pinned modal 
+
+cancelX.addEventListener ('click', () => {
+  pinned.classList.add ('exitAnim');
+  pinnedContent.classList.add ('exitAnim-content');
+  
+  setTimeout(() => {
+    pinned.style.display="none";
+    pinned.classList.remove ('exitAnim');
+    pinnedContent.classList.remove ('exitAnim-content');
+
+}, 700);
+
+})
+
+
+
+
+
+// removed modal
+removed.style.display="none";
+
+
 
 
