@@ -92,7 +92,6 @@ buttonObj.addEventListener ('click', () => {
     removed.style.display="none";
     removed.classList.remove ('slide-out');
 }, 3000);
-
 pinned.classList.add ('fade-out');
 setTimeout(() => {
       pinned.classList.remove ('fade-out');
@@ -125,6 +124,42 @@ cancelX.addEventListener ('click', () => {
 
 // removed modal
 removed.style.display="none";
+
+
+//undo 
+undo.addEventListener ('click', () => {
+  pinned.classList.add ('exitAnim');
+  pinnedContent.classList.add ('exitAnim-content');
+  buttonObj.classList.toggle ('button-click');
+  gPinDown=false;
+  
+  
+  setTimeout(() => {
+    pinned.style.display="none";
+    pinned.classList.remove ('exitAnim');
+    pinnedContent.classList.remove ('exitAnim-content');
+
+}, 700);
+
+removed.style.display = "block";
+    removed.classList.add ('slide-in');
+    setTimeout(() => {
+      removed.classList.remove ('slide-in');
+      removed.classList.add ('slide-out');
+
+  }, 2000);
+  setTimeout(() => {
+    removed.style.display="none";
+    removed.classList.remove ('slide-out');
+}, 3000);
+pinned.classList.add ('fade-out');
+setTimeout(() => {
+      pinned.classList.remove ('fade-out');
+      pinned.style.display="none";
+  }, 1000);
+
+})
+
 
 
 
