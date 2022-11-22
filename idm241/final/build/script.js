@@ -65,10 +65,15 @@ buttonObj.addEventListener ('click', () => {
     pinObj.classList.add ('pinAnim');
     console.log ("pin animate!");
 
+
+    //removed modal after pinned 
+    removed.classList.remove ('slide-out');
+    removed.classList.remove ('slide-in');
+    removed.style.display="none";
+
       //modal
   pinned.style.display="block";
   pinned.classList.add ('pinnedModalAnim');
-    
 
   } else {
     gPinDown = false;
@@ -76,28 +81,28 @@ buttonObj.addEventListener ('click', () => {
     // pinned.style.display="none";
 
     //removed modal 
-    removed.style.display="block";
+    removed.style.display = "block";
     removed.classList.add ('slide-in');
     setTimeout(() => {
       removed.classList.remove ('slide-in');
       removed.classList.add ('slide-out');
-  
-  }, 5000);
+
+  }, 2000);
   setTimeout(() => {
     removed.style.display="none";
     removed.classList.remove ('slide-out');
-}, 6000);
+}, 3000);
 
-    if (pinned.style.display="block") {
-      pinned.classList.add ('fade-out');
-      setTimeout(() => {
-        pinned.classList.remove ('fade-out');
-        pinned.style.display="none";
-    }, 1000);
-    }
+pinned.classList.add ('fade-out');
+setTimeout(() => {
+      pinned.classList.remove ('fade-out');
+      pinned.style.display="none";
+  }, 1000);
     } 
   
 })
+
+
 
 // close pinned modal 
 
