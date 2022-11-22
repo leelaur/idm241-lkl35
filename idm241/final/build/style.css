@@ -503,3 +503,30 @@ font-size: 18pt;
   .fade-out {
     animation: fadeOut 1s;
   }
+
+
+  /*responsive modal */
+  @media (max-width: 600px) {
+    .pinnedModal {
+        width: 300px;
+        height: 75px;
+    }
+
+    .modalContent {
+        /* display: flex;
+        align-items: center; */
+        justify-content: space-between;
+        gap: 10px;
+    
+        width: 100%;
+    }
+  
+    .modalImg {
+        width: 75px ;
+    }
+
+    .removedModal {
+        width: 400px;
+        height: 30px;
+    }
+}
