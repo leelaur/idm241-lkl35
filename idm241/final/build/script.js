@@ -19,7 +19,7 @@ const removed = document.querySelector('.removedModal');
     buttonObj.classList.remove('button-hover-off');
     buttonObj.style.cssText= ' cursor: pointer;';
     buttonObj.style.display="block";
-    imgObj.classList.add('fadeIn');
+    imgObj.classList.add('fadeInFilter');
   })
 
    // //hover off pin button
@@ -34,14 +34,16 @@ const removed = document.querySelector('.removedModal');
   imgObj.addEventListener('mouseenter', () => {
     buttonObj.style.display="block";
     imgObj.style.cssText= 'cursor:zoom-in;';
-    imgObj.classList.add('fadeIn');
+    imgObj.classList.add('fadeInFilter');
+    buttonObj.classList.add('fadeInBtn');
   })
 
   //hover off card image 
   imgObj.addEventListener('mouseleave', () => {
     buttonObj.style.display="none";
     pinObj.classList.remove ('pinAnim');
-    imgObj.classList.remove('fadeIn');
+    imgObj.classList.remove('fadeInFilter');
+    buttonObj.classList.remove('fadeInBtn');
 
   })
 
