@@ -13,7 +13,6 @@
         <header>
             <img src="../images/icon.png" alt="Pinterest logo" class="logo"/>
             <h1> IDM 241: Microinteractions - Final Build</h1>
-            <p class="sub-title--top"> Pinterest saving pin - <a href="https://www.pinterest.com" class="link" target="_blank">https://www.pinterest.com</a></p>
         </header>
 
 <!--BUILD START-->
@@ -46,7 +45,8 @@
                     <ul>
                         <li>Hover on/off image card</li>
                         <li>Hover on/off pin button</li>
-                        <li> Click on/off pin button</li>
+                        <li> Click on pin button to <i>PIN</i></li>
+                        <li> Click on pin button to <i>UNPIN</i></li>
                         <li> Hover on/off "Undo" button</li>
                         <li> Click on "Undo" button</li>
                         <li> Hover on/off "X" button </li>
@@ -61,6 +61,7 @@
                             <ul>
                                 <li>Fade in to filter 50%</li>
                                 <li>Default cursor to zoom-in cursor</li>
+                                <li>Pin button fades in</li>
                             </ul>
                         </div>
                         <div>
@@ -68,6 +69,7 @@
                             <ul>
                                 <li>Fade out of filter</li>
                                 <li>Zoom-in cursor to default cursor</li>
+                                <li>Pin button disappears</li>
                             </ul>
                         </div>
                         <div>
@@ -85,59 +87,62 @@
                             </ul>
                         </div>
                         <div>
-                            <p> <i>Click on pin button</i></p>
+                            <p> <i>Click on pin button to PIN</i></p>
                             <ul>
                                 <li>Pin button color changes to black</li>
-                                <li> Pin icon moves up 5px and right 5px in 0.1s, then down 5px and left 5px to original position</li>
-                                <li>"Success" toast puff-in from top and fade away after 5s</li>
+                                <li> Pin icon moves up 5px and right 5px, then down 5px and left 5px to original position in 1s</li>
+                                <li>"Pinned" modal puffs-in </li>
                             </ul>
                         </div>
                         <div>
-                            <p> <i>Click off pin button</i></p>
+                            <p> <i>Click on pin button to UNPIN</i></p>
                             <ul>
                                 <li>Pin button color changes to #9E2224 (hover color)</li>
-                                <li>"Removed" toast slides up from the bottom and stays for 5s before fade out </li>
+                                <li>"Pinned" modal fades out </li>
+                                <li>"Removed" modal slides up from the bottom and stays for 2s before slide down </li>
                             </ul>
                         </div>
                         <div>
                             <p> <i>Hover on "Undo" button</i></p>
                             <ul>
                                 <li>Default cursor turns to pointer </li>
-                                <li>Background turns to #AAAAAA</li>
+                                <li>Background color turns to gray</li>
+                                <li>Text color turns to white</li>
                             </ul>
                         </div>
                         <div>
                             <p> <i>Hover off "Undo" button</i></p>
                             <ul>
                                 <li> Pointer to default cursor</li>
-                                <li>Background turns original shade</li>
+                                <li>Background color returns to original shade</li>
+                                <li>Text color returns to black</li>
                             </ul>
                         </div>
                         <div>
                             <p> <i>Click on "Undo" button</i></p>
                             <ul>
-                                <li> Modal condenses and dissolves in 5s</li>
-                                <li>"Removed" toast modal slides up from the bottom and stays for 5s before fade out</li>
+                                <li> "Pinned" modal fades out</li>
+                                <li>"Removed" modal slides up from the bottom and stays for 2s before slide down</li>
                             </ul>
                         </div>
                         <div>
                             <p> <i>Hover on "X" button</i></p>
                             <ul>
-                                <li>Color turns to #AAAAAA</li>
                                 <li> Default pointer turns to cursor</li>
+                                <li>Color turns to #E60023</li>
                             </ul>
                         </div>
                         <div>
                             <p> <i>Hover off "X" button</i></p>
                             <ul>
-                                <li>Color turns to original shade</li>
                                 <li>Pointer turns to default cursor</li>
+                                <li>Color returns to original shade</li>
                             </ul>
                         </div>
                         <div>
                             <p> <i>Click on "X" button</i></p>
                             <ul>
-                                <li>Modal condenses and dissolves in 5s</li>
+                                <li>Modal condenses and slide down in 0.7s</li>
                             </ul>
                         </div>
                     </div>
@@ -150,6 +155,7 @@
                             <ul>
                                 <li>Fade in to filter 50%</li>
                                 <li>Default cursor to zoom-in cursor</li>
+                                <li>Pin button fades in</li>
                             </ul>
                         </div>
                         <div>
@@ -157,6 +163,7 @@
                             <ul>
                                 <li>Fade out of filter</li>
                                 <li>Zoom-in cursor to default cursor</li>
+                                <li>Pin button disappears</li>
                             </ul>
                         </div>
                         <div>
@@ -174,59 +181,62 @@
                             </ul>
                         </div>
                         <div>
-                            <p> <i>Click on pin button</i></p>
+                            <p> <i>Click on pin button to PIN</i></p>
                             <ul>
                                 <li>Pin button color changes to black</li>
-                                <li> Pin icon moves up 5px and right 5px in 0.1s, then down 5px and left 5px to original position</li>
-                                <li>"Success" toast puff-in from top and fade away after 5s</li>
+                                <li> Pin icon moves up 5px and right 5px, then down 5px and left 5px to original position in 1s</li>
+                                <li>"Pinned" modal puffs-in </li>
                             </ul>
                         </div>
                         <div>
-                            <p> <i>Click off pin button</i></p>
+                            <p> <i>Click on pin button to UNPIN</i></p>
                             <ul>
                                 <li>Pin button color changes to #9E2224 (hover color)</li>
-                                <li>"Removed" toast slides up from the bottom and stays for 5s before fade out </li>
+                                <li>"Pinned" modal fades out </li>
+                                <li>"Removed" modal slides up from the bottom and stays for 2s before slide down </li>
                             </ul>
                         </div>
                         <div>
                             <p> <i>Hover on "Undo" button</i></p>
                             <ul>
                                 <li>Default cursor turns to pointer </li>
-                                <li>Background turns to #AAAAAA</li>
+                                <li>Background color turns to gray</li>
+                                <li>Text color turns to white</li>
                             </ul>
                         </div>
                         <div>
                             <p> <i>Hover off "Undo" button</i></p>
                             <ul>
                                 <li> Pointer to default cursor</li>
-                                <li>Background turns original shade</li>
+                                <li>Background color returns to original shade</li>
+                                <li>Text color returns to black</li>
                             </ul>
                         </div>
                         <div>
                             <p> <i>Click on "Undo" button</i></p>
                             <ul>
-                                <li> Modal condenses and dissolves in 5s</li>
-                                <li>"Removed" toast modal slides up from the bottom and stays for 5s before fade out</li>
+                                <li> "Pinned" modal fades out</li>
+                                <li>"Removed" modal slides up from the bottom and stays for 2s before slide down</li>
                             </ul>
                         </div>
                         <div>
                             <p> <i>Hover on "X" button</i></p>
                             <ul>
-                                <li>Color turns to red</li>
                                 <li> Default pointer turns to cursor</li>
+                                <li>Color turns to #E60023</li>
                             </ul>
                         </div>
                         <div>
                             <p> <i>Hover off "X" button</i></p>
                             <ul>
-                                <li>Color turns to original shade</li>
                                 <li>Pointer turns to default cursor</li>
+                                <li>Color returns to original shade</li>
                             </ul>
                         </div>
                         <div>
                             <p> <i>Click on "X" button</i></p>
                             <ul>
-                                <li>Modal condenses and dissolves in 5s</li>
+                                <li>Modal condenses and slide down in 0.7s</li>
                             </ul>
                         </div>
                     </div>
@@ -238,7 +248,7 @@
                             <div>
                                 <ul>
                                   <!-- <li></li> -->
-                                  <li>Modal pops up and remains on screen until the user interacts with it (closes the "x" or undos save)</li>
+                                  <li>"Pinned" modal pops up and remains on screen until the user interacts with it (closes the "x" or undo save)</li>
                                 </ul>
                             </div>
                         </div>

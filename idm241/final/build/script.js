@@ -33,9 +33,10 @@ const removed = document.querySelector('.removedModal');
 //hover on card image
   imgObj.addEventListener('mouseenter', () => {
     buttonObj.style.display="block";
+    buttonObj.classList.add('fadeInBtn');
     imgObj.style.cssText= 'cursor:zoom-in;';
     imgObj.classList.add('fadeInFilter');
-    buttonObj.classList.add('fadeInBtn');
+
   })
 
   //hover off card image 
@@ -43,7 +44,7 @@ const removed = document.querySelector('.removedModal');
     buttonObj.style.display="none";
     pinObj.classList.remove ('pinAnim');
     imgObj.classList.remove('fadeInFilter');
-    buttonObj.classList.remove('fadeInBtn');
+    // buttonObj.classList.remove('fadeInBtn');
 
   })
 
@@ -116,7 +117,7 @@ cancelX.addEventListener ('click', () => {
     pinned.classList.remove ('exitAnim');
     pinnedContent.classList.remove ('exitAnim-content');
 
-}, 700);
+}, 500);
 
 })
 
@@ -141,7 +142,7 @@ undo.addEventListener ('click', () => {
     pinned.classList.remove ('exitAnim');
     pinnedContent.classList.remove ('exitAnim-content');
 
-}, 700);
+}, 500);
 
 removed.style.display = "block";
     removed.classList.add ('slide-in');
@@ -161,8 +162,4 @@ setTimeout(() => {
   }, 1000);
 
 })
-
-
-
-
 

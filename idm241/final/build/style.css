@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Helvetica';
+    font-family: 'Inter', 'Helvetica';
     line-height: 1.5;
 }
 
@@ -224,6 +224,8 @@ img {
 .button-hover-off {
     background-color: #E60023;
 }
+
+
 /* TRIAL */
 
 .button-click {
@@ -284,7 +286,7 @@ img {
   }
 
 .fadeInBtn {
-    animation: fadeIn 1s;
+    animation: fadeIn 0.3s;
 }
 
 /*Pinned Modal */
@@ -469,7 +471,7 @@ font-size: 18pt;
   }
 
   .exitAnim-content {
-    animation: condense 0.7s;
+    animation: condense 0.5s;
   }
 
   /* removed modal slide in  */
