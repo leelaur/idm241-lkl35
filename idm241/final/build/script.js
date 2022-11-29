@@ -34,7 +34,7 @@ const removed = document.querySelector('.removedModal');
   imgObj.addEventListener('mouseenter', () => {
     buttonObj.style.display="block";
     buttonObj.classList.add('fadeInBtn');
-    imgObj.style.cssText= 'cursor:zoom-in;';
+    // imgObj.style.cssText= 'cursor:zoom-in;';
     imgObj.classList.add('fadeInFilter');
 
   })
