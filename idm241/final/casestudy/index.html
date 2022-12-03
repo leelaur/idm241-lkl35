@@ -9,69 +9,134 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div> 
-        <p> IDM 241: Microinteractions</p>
+    <div class="top"> 
+        <div >
+            <img src="../images/icon.png" alt="pinterest logo" class="logo"/>
+             <p> IDM 241: Microinteractions</p>
+        </div>
+       
     </div>
     <div>
-        <h1> Pinterest Microinteractions </h1>
-        <p>
+        <h1 class="title"> Pinterest Microinteractions </h1>
+        <div>
+            <img src="images/hero.png" alt="hero image" class="hero-img"/>
+        </div>
+        <p class="hero-txt">
             Pinterest is a visual search engine that allows users to explore and save different ideas and inspirations. 
-            With over 86 million users, Pinterest is one of the largest social media networks in the world. 
+            With over 86 million users, Pinterest is the 14th largest social media networks in the world. 
         </p>
     </div>
-    <div>
+    <section>
         <h2> Overview </h2>
+    </section>
+    <section>
         <p>
            
         </p>
-    </div>
-    <div>
+    </section>
+    <section>
         <h2> Context & Challenge </h2>
-       <div>
-        <div>
+    </section>
+    <section>
             <h3> Background</h3>
-            <p>
-               In class I learned that microinteractions engage users and brings delight in small moments. To apply this knowledge, 
-               I envisioned and developed my own microinteractions in the span of 10 weeks. I chose Pinterest as an interesting website/app 
-               to redesign for because of the potential to pull in the branding into the microninteraction.
+            <p class="indent">
+                Micro-interactions are visual feedback indicators which provide the users with enough knowledge to understand the function. 
+                It also engages users and brings delight in small interactions. Over 10 weeks, I learned to mock-up and develop existing micro-interactions
+                to improve upon and create meaningful interactions for users. 
             </p>
-        </div>
-        <div>
-            <h3> Problem</h3>
-            <p>
-                 Throughout the evolution of my microinteraction, I had to consider what could bring delight without loosing the existing functionality. 
-                 I also had to consider the feasability within the timeline I was given with 1-2 weeks for each level of microinteraction. 
+       
+            <p class="indent">
+                I chose Pinterest to redesign because of the potential to push the branding into the micro-interaction. On Pinterest, users “pin” images to save. 
+                With the imagery of a pushpin and the action of pinning, I incorporated this into the animations of the final product.  
             </p>
-        </div>
-        <div>
-            <h3> Goals</h3>
-            <p>
-                My main goal was to 
+    </section>
+    <section>
+        <h3> Problem</h3>
+    </section>
+    <section>
+            <p class="indent">
+                Pinterest uses good micro-interactions, so rather than coming up with something entirely new, I decided to find areas that could bring a unique flair 
+                without losing the core function. Because Pinterest is a visual website, I also had to consider keeping the animations simple, so it doesn’t take away from the main content. 
             </p>
-        </div>
-       </div>
-    </div>
-    <div>
+
+            <p class="indent">
+                Although working on this project for 10 weeks total, three levels of micro-interactions: alpha, beta and final, were given 2-3 weeks to conceptualize and develop. 
+                Considering the short time frame, I had to manage my time and consider feasibility within the time frame without sacrificing the quality of a meaningful micro-interaction. 
+            </p>
+    </section>
+   
+    <section>
+        <h3> Goals & Objectives</h3>
+            <p class="indent">
+                In this project, I aimed to create multiple micro-interactions forming an interactive experience that brings delight following the project timeline. 
+            </p>
+    </section>
+    <section>
         <h2> Process & Insight </h2>
-        
-        <p>
-            I first decided to redesign the "save pin" interaction because it was an critical part of the website's functionality. 
-            I started to envision my updated microinteraction through a static protoype created on Figma which showed what would happen when a user would
-            interact with it. I used a pin icon to 
+    </section>
+    <section>
+        <h3> Target Audience</h3>
+        <p class="indent">
+            To better understand Pinterest, I had to better understand its users. The main audience consists of 60% female and 38% between the ages of 50-65 years old. 
+            As the largest demographic on Pinterest, I made a user persona of Linda who uses the website for dinner recipes. 
         </p>
-    </div>
-    <div>
-        <h2> Solution </h2>
+        <img src="images/linda.png" alt="user persona of Linda" class="linda-ph" />
+
+        <h3> Alpha</h3>
+        <p class="indent">
+            For my alpha micro-interaction, I originally chose the chick-fil-A button to build because the changes were so subtle that it was hard to notice when interacting with it.
+             To provide clear feedback, I made the shadow being used darker and animate the truck image to slide on the x-axis to give it movement on hover. Because I felt I couldn’t 
+             add more to this micro-interaction for the next two phases, I did not continue further on the Chick-fil-A button. 
+        </p>
+        <img src="images/alpha.gif" alt="gif of alpha micro-interaction" class="gif alpha-gif" />
+
+        <h3> Beta</h3>
+        <p class="indent">
+            Following my alpha build, I decided to take Pinterest and redesign the experience of pinning and saving images. On Pinterest’s website, it reveals the function to save or pin after the user hovers over the image. 
+            This is so that the image can be seen without distractions. I kept this hover interaction to keep the entire image visible. The “save” button on Pinterest’s website was changed to a pin image which animates like pushing in a pin on click. 
+            The code for the truck animation on the alpha build was reused here because of the similarity that both icons animated across the axis. On hover and click, this button would be indicated by a change of different color. Off hover, the user could see if they had already clicked to pin.
+        </p>
+
+        <img src="images/beta.gif" alt="gif of beta micro-interaction" class="gif beta-gif" />
+
+        <p class="indent">
+            I started coding using HTML and CSS, which I felt most comfortable using, but found difficulty for micro-interactions triggered by clicks. I had to implement JavaScript to get the animation to know and show when a user clicked to pin and unpin, especially off hover when it is not visible.  
+        </p>
+
+        <h3> Final</h3>
+        <p class="indent">
+            My last addition to the Pinterest micro-interactions was the “pinned” and “removed” modal after clicking to pin or unpin. This exists the same on the current website but to bring more personality I developed a different entering and exiting animation. 
+            To keep the theme of pinning, I used the puff-in animation which looks like the modal is being pinned onto the bottom of the screen. The modal remains on the screen unless clicked “x” or unpinned from the “pin” button which differs from Pinterest’s website that disappears on a timer. 
+            When it disappears too quickly, it is more difficult to utilize the undo button on the modal. 
+        </p >
+        <img src="images/final.gif" alt="gif of final micro-interaction" class="gif final-gif" />
+        <p class="indent">
+            While developing, I came across the difficulty of timing the modal to come in and come out. For my “removed” modal I received feedback to shorten my display time originally set for 5 seconds which was too long and shortened to 2 seconds. This allows for enough time to read the modal before it disappears.        
+        </p>
         
-        <p></p>
-    </div>
-    <div>
+    </section>
+    <section>
+        <h2> Solution </h2>
+    </section>
+    <section>
+        <p>
+            The final build is the product of accumulated micro-interactions and evolved knowledge from each phase to improve on the next. This solution allows the user to hover on the image, pin to save, and view a modal to save and remove. 
+        </p>
+
+     <a href="http://leelaur.com/idm241/final/build" target="_blank"><button>Go to final build</button></a>
+    </section>
+    <section>
         <h2> Results </h2>
+    </section>
+    <section class="bottom">
         <p> 
-            The final build is responsive and functional. Despite working it still runs a few bugs that I did not have time to fix. 
-            If I were to change anything I would make it dkfjanselkfnqkdln
+            Although the micro-interaction works as it is supposed to, there are bugs when the “pin” button is clicked too fast that the modals animation entering in and out break. For future iterations, I would focus on fixing this issue to accommodate for situations where it may quick clicking might occur.
 
         </p>
-    </div>
+        <br>
+        <p>
+            Through this project, I was able to push my creative and coding skills to come up with unique micro-interactions and develop them. I was successful in completing each phase within the time frame and with a function, and responsive, product. 
+        </p>
+    </section>
 </body>
 </html>
